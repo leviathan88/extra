@@ -34,28 +34,13 @@ const pol = (str) => {
   }
 }
 
-// const three = (str, letter, boo) => {
-//   let arr = str.split('')
-  
-//   for (let i of arr) {
-//     if (i === letter) {
-//       console.log(i);
-
-//       if (boo === true) {
-//         let cap = i.toUpperCase()
-//         console.log(cap);
-//       }
-//     }
-//   }
-// }
-
-// birinci stringin içində gəzərək ikinci stringin olduğu hissələri tapıb
-// onları gələn 3-cü parametrə görə böyük yada kiçik hərfə çevirsin
-// sonda isə dəyişdirilmiş stringi qaytarsın
-// modifyString("Jhon Doe", "e", true) // output: "Jhon DoE"
-// modifyString("Jhon Doe", "j", false) // output: "jhon Doe"
-// modifyString("Jhon Doe", "o", true) // output: "jhOn DOe"
+// task 3 ---------------------------------------------
+const upper = (str, letter, boo) => {
+  let result = ''
+  for (let i of str) { i === letter && boo ? result += i.toUpperCase() : result += i }
+  console.log(result);
+}
 
 capital('our battle will be legendary')
 pol('level')
-// three('opponent', 'o', true)
+upper('opponent', 'o', true)
